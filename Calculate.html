@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Washing Machine Bill with Login</title>
+    <link rel="stylesheet" href="Washing_Machine.css">
+    <center>
+        <h2><span style="color:red;font-size:50px;font-weight:bold">!.....Washing Machine Bill.....!</span></h2>
+    </center>
+</head>
+<body>
+    <!-- Form for login (username and password) and entering the number of shirts, pants, and t-shirts -->
+    <form action="BillServlet" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+
+        <label for="shirt">Shirts (Rs500 each):</label>
+        <input type="number" id="shirt" name="shirt" min="0" placeholder="Enter number of shirts"><br><br>
+
+        <label for="pant">Pants (Rs700 each):</label>
+        <input type="number" id="pant" name="pant" min="0" placeholder="Enter number of pants"><br><br>
+
+        <label for="tshirt">T-Shirts (Rs300 each):</label>
+        <input type="number" id="tshirt" name="tshirt" min="0" placeholder="Enter number of t-shirts"><br><br>
+
+        <!-- Submit button -->
+        <button type="submit">Calculate Bill</button>
+    </form>
+</body>
+</html>
